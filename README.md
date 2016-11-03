@@ -12,15 +12,12 @@ LED_RED : Waitfor 60 seconds
 LED_GREEN : Waitfor 60 seconds
 LED_YELLO: Waitfor 60 seconds
 
-LED_RED -r-> LED_GREEN
-LED_GREEN -r-> LED_YELLO
+LED_RED -r-> LED_GREEN : CHENGE LED
+LED_GREEN -r-> LED_YELLO : CHENGE LED
 LED_YELLO -r-> [*]
-LED_YELLO --> LED_RED 
-
-
-@enduml
+LED_YELLO --> LED_RED  : CHENGE LED
 
 
 @enduml
  ```
- ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLq2tIjLFmSNM93t9ruIh9BCb9LGW9SdHqytHMy77q3U22IYbOAOGdPfQavHSfc1ae5AScv-Ub58CbtODSNVrmIqUw-lZuOvM56mrt0jWe94FX4c134CP1982kHnP2U4E1YulB8JKl1UX70000)
+ ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLq2tIjLFmSNM93t9ruIh9BCb9LGW9SdHqytHMy77q3U22IYbOAOGdPfQavHSfc1ae5AScv-Ub58CbtODSNVrmIqUw-lZuOvM56mrt0imePmzNFtTNa12I3N1LO1CnLK64mQg0_a8MGdXG0LKR5vT3QbuAC2W0)
