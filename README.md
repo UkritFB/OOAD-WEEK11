@@ -87,3 +87,28 @@ new_clk --> old_clk
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILLmp4aiobNWYjQALT3DqRLJ2Cx8BuyFoSnDvOAp57I1ua05N7cfvV79ETaALWh1hY4AZZwEGRvS-JafK35_FwWGNACLs3I5aipKL8MKpEA2dCHABX10DHbgAjnqNHHNmCp7fH8gpyNba9gN0lGN0000)
+
+รูปที่ 4 
+
+```
+@startuml
+
+title Count 1 - 4
+[*] -R-> S0
+S0 -U-> [*]
+S0 : display show 1 
+S1 : display show 2
+S2: display show 3 
+S3: display show 4 
+
+
+
+
+S0 -R-> S1
+S1 -D-> S2
+S2 -L-> S3
+S3 -U-> S0
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILLmpY_DAr4mLD1LCE6ArefLq0tIjLC8Dk0ADb3G3GKoWM8WjfL2IcPnGKvYfK9nHduvK3rNi26we15Ni16Qa35GdJ6Qc8a25mY0B03RPGWoIjS5n0IPeA3h0s8Q0pL2N01q39T3QbuAqD40)
