@@ -65,3 +65,25 @@ RIGH --> RIGH
 ![](http://www.plantuml.com/plantuml/img/NP512y8m38Nl-HKv2_q37cH3PpSG9bil8Xw4xI3CJRJ3ls-Ihbdn4lZIzruUDFlu-zlFpm70F_pGupvluBgveHdC3fiYFrn09XfYUbXeoq9qPTLYw-epd8gZMvQsHYPeAblgXW5ihTowt1OGe-SNXTEM51WkIrv8DTtq7RaCHoHb_iknVwKGaAZ5BVdgZQINrQSwSOKQQbDadqBQU6rBCoqRKRf6MAggL9oGzMD7__83)
 
 รูปที่ 3
+
+```
+@startuml
+
+title Alarm 
+[*] -l-> Show_Time
+Show_Time --> [*]
+new_clk : SET ALARM
+old_clk : ON ALARM
+Show_Time: Show tiee display
+
+
+
+
+Show_Time --> new_clk
+new_clk --> Show_Time
+old_clk --> new_clk
+new_clk --> old_clk
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILLmp4aiobNWYjQALT3DqRLJ2Cx8BuyFoSnDvOAp57I1ua05N7cfvV79ETaALWh1hY4AZZwEGRvS-JafK35_FwWGNACLs3I5aipKL8MKpEA2dCHABX10DHbgAjnqNHHNmCp7fH8gpyNba9gN0lGN0000)
