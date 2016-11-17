@@ -112,3 +112,20 @@ S3 -U-> S0
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILLmpY_DAr4mLD1LCE6ArefLq0tIjLC8Dk0ADb3G3GKoWM8WjfL2IcPnGKvYfK9nHduvK3rNi26we15Ni16Qa35GdJ6Qc8a25mY0B03RPGWoIjS5n0IPeA3h0s8Q0pL2N01q39T3QbuAqD40)
+รูปที่ 5 
+```
+@startuml
+
+title ON/OFF LAMP 
+[*] -d-> OFF
+ON -D-> [*]
+ON : LAMP ON
+OFF : LAMP OFF
+
+OFF -U-> ON
+ON -R-> OFF
+
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILNmzzFtTtDJy77q3L3WYjQALT1DqRLJ00fn-VifwBe0sK114DiAeiRVZmka7iO3gWFpTKD1klp0ceAW1d1nEQJcfG3j0W00)
