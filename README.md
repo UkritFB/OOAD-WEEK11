@@ -169,3 +169,21 @@ endif
 @enduml
 ```
 ![](https://www.planttext.com/plantuml/img/JOz13e9034NtFKKpApKnda028aGIfOGPueAu83h89CW2Iho-1J5nrURrz__M7xZgUNorm8vRYo5Tii94EQmsQznkFLIehua9JqZfZk8O5O2hKUctutk3Uy4AkR4Tu2GlkH_j3TM1o2YO3SuK797qTuv9AlPu34omW2odCD9wHhWmAio_gdVFXWNBIM3RmKxCA-jAMed2b7ucQjcVXTt3rG2-LFdk0m00)
+รูปที่ 8 
+```
+@startuml
+title MOTORCYCLE
+(*) --> "INPUT KEY "
+
+if "KEY = ON" then
+  -->[true] "EngineStart"
+
+  -right-> (*)
+else
+  ->[false] "NOT ACTIVITY"
+  --> (*)
+endif
+
+@enduml
+```
+![](https://www.planttext.com/plantuml/img/9Ov12i8m44NtSufXLYhq29QAT16aYMWKId5HSDe6OXRfzFvEw6e-_pyUqwmoPjb-4IH8PEoSTmyud8vOLJMIiVUNnrlR8m642Qd4CpfBA0idm88DaZV-8BLf3ecVHQYqJZdCYwX6TS1nvTBLmpHgLDmwZvUhDs_ZUzfDEvc-OG9ezEfVVm00)
