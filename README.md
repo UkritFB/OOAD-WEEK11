@@ -129,3 +129,22 @@ ON -R-> OFF
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILNmzzFtTtDJy77q3L3WYjQALT1DqRLJ00fn-VifwBe0sK114DiAeiRVZmka7iO3gWFpTKD1klp0ceAW1d1nEQJcfG3j0W00)
+
+รูปที่ 6 
+```
+@startuml
+title FAN
+(*) --> "INPUT SWITCH ON/OFF "
+
+if "Switch = ON" then
+  -->[true] "MORTOR ON"
+
+  -right-> (*)
+else
+  ->[false] "MORTOR OFF"
+  --> (*)
+endif
+
+@enduml
+```
+![](https://www.planttext.com/plantuml/img/JOw_2i8m4CRtUuhZ9XMAJs2f2C4E9j9678f3qSG4OeVqYg_lXIvEt_7z-N7Dp6FcvPE08oU7wgXXizjYLTL8hRxUBFRtrfxEQFJUA8K443rI_uty37WGcv23cm3BPk2yk0VInNJMT2M44kJu3Yn48ODBiojUFVXHph-oKhHIrjxqYXwW4PNtVW00)
