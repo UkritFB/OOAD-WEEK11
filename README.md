@@ -148,3 +148,24 @@ endif
 @enduml
 ```
 ![](https://www.planttext.com/plantuml/img/JOw_2i8m4CRtUuhZ9XMAJs2f2C4E9j9678f3qSG4OeVqYg_lXIvEt_7z-N7Dp6FcvPE08oU7wgXXizjYLTL8hRxUBFRtrfxEQFJUA8K443rI_uty37WGcv23cm3BPk2yk0VInNJMT2M44kJu3Yn48ODBiojUFVXHph-oKhHIrjxqYXwW4PNtVW00)
+รูปที่ 7 
+```
+@startuml
+title COMPUTER
+(*) --> " SWITCH ON/OFF "
+
+if "Switch = ON" then
+  -->[true] "BOOT"
+ --> LOAD OS
+  --> INPUT DATA
+  --> PROCESS DATA 
+  --> OUTPUT DATA
+  -right-> (*)
+else
+  ->[false] " NO PROCESS"
+  --> (*)
+endif
+
+@enduml
+```
+![](https://www.planttext.com/plantuml/img/JOz13e9034NtFKKpApKnda028aGIfOGPueAu83h89CW2Iho-1J5nrURrz__M7xZgUNorm8vRYo5Tii94EQmsQznkFLIehua9JqZfZk8O5O2hKUctutk3Uy4AkR4Tu2GlkH_j3TM1o2YO3SuK797qTuv9AlPu34omW2odCD9wHhWmAio_gdVFXWNBIM3RmKxCA-jAMed2b7ucQjcVXTt3rG2-LFdk0m00)
