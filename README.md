@@ -187,3 +187,36 @@ endif
 @enduml
 ```
 ![](https://www.planttext.com/plantuml/img/9Ov12i8m44NtSufXLYhq29QAT16aYMWKId5HSDe6OXRfzFvEw6e-_pyUqwmoPjb-4IH8PEoSTmyud8vOLJMIiVUNnrlR8m642Qd4CpfBA0idm88DaZV-8BLf3ecVHQYqJZdCYwX6TS1nvTBLmpHgLDmwZvUhDs_ZUzfDEvc-OG9ezEfVVm00)
+รูปที่ 9 
+```
+@startuml
+title GRADE
+(*) --> "INPUT SCORE "
+
+if "SCORE >= 80" then
+  -r->[true] "A"
+
+  --> (*)
+else
+  -d-> if "SCORE >= 70"
+        -r->[true]"B"
+        --> (*)
+    else
+        if "SCORE>=60"
+            -r->[true] "C"
+            --> (*)
+        else
+            if"SCORE>=50"
+                -r->[True]"D"
+                --> (*)
+            else
+            -d->[Flase]"F"
+            --> (*)
+            endif
+        endif
+    endif
+endif
+
+@enduml
+```
+![](https://www.planttext.com/plantuml/img/VP4z3u8m48Rt-nMNczIa2OiV2mJamxYeGPo80mababG6AF_VGX7vYZUqzzxrVNffxKecfQpV0cGk1STJw7W-h3PhPCn2EbzkZmZlxZNqaG3o34aBoyI3GIXVl014LZ8hbcNDdqYEEeUjMr60YuetCbLwvDuRfEewVdOw3geTeiaxZ8wUOvcx0MLCGd8dhG5kXjJOBtKxeVRag9tHM-XEu8iND8yG1oAf52FuFrphBz8yWxdIcLx1LhlwlGy0)
