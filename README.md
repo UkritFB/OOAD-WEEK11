@@ -220,3 +220,21 @@ endif
 @enduml
 ```
 ![](https://www.planttext.com/plantuml/img/VP4z3u8m48Rt-nMNczIa2OiV2mJamxYeGPo80mababG6AF_VGX7vYZUqzzxrVNffxKecfQpV0cGk1STJw7W-h3PhPCn2EbzkZmZlxZNqaG3o34aBoyI3GIXVl014LZ8hbcNDdqYEEeUjMr60YuetCbLwvDuRfEewVdOw3geTeiaxZ8wUOvcx0MLCGd8dhG5kXjJOBtKxeVRag9tHM-XEu8iND8yG1oAf52FuFrphBz8yWxdIcLx1LhlwlGy0)
+รูปที่ 10
+```
+@startuml
+title MIXER ON/OFF SOUND
+(*) --> "INPUT VAL"
+
+if "SOUND INPUT > 50" then
+  -r->[true] "ROUND SOUND"
+
+  --> (*)
+else
+    -d->[Flase]"OFF MIXER"
+            --> (*)
+
+
+@enduml
+```
+![](https://www.planttext.com/plantuml/img/DKwz2i8m4DxlAJvkKY7euXegQA2WYLGhWdGez8g5s25DtzyOwMtt_HTJR4ESFvxY4BtWKZvF5PpTEcDmSxKzqcgpXb8QNDfhVSVZS6QYeGTd6dzKOxzZnBUC1AYWz2k6MHfmbKLPccp8IIcHn4-ItWHqIMnyEqd3lzAyW3ErtE8XAcJiqjWl)
